@@ -11,7 +11,7 @@ window.addEventListener('load', ()=> {
      
          //lat +0.15, long +1.15
           
-          const api = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&${apiid}`;           
+          const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&${apiid}`;           
         
             fetch(api)
         .then(response =>{
@@ -23,8 +23,8 @@ window.addEventListener('load', ()=> {
            //tempf.textContent = obj.main.temp;
          
         var temperature = obj.main.temp;
-                                //271.1 or 275.1  
-		var tempc = Math.round(temperature - 275.1 )
+                                 
+		var tempc = Math.round(temperature -273.15 )
           tempf.textContent = `${tempc}c°`;
         //   loca.textContent = obj.sys.country+'/';
           city.textContent = obj.name;
@@ -32,13 +32,13 @@ window.addEventListener('load', ()=> {
          var id = obj.weather[0].id;
          icon.innerHTML = `<i class="wi wi-owm-${id}"></i>`;
          var temperature = obj.main.temp_min;
-                                //271.1 or 275.1
-		var tempc = Math.round(temperature - 275.1 )
+                                
+		var tempc = Math.round(temperature  -274.15 )
           tempMin.textContent = `${tempc}c°Min`;
           
           var temperature = obj.main.temp_max;
-          //271.1 or 275.1
-        var tempc = Math.round(temperature - 275.1)
+          
+        var tempc = Math.round(temperature  -272.15)
         tempMax.textContent = `${tempc}c°Max`;
 
         var humidity = obj.main.humidity;

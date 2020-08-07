@@ -230,7 +230,7 @@ body{
     background: none;
     /* border: red 2px solid  ; */
     width: 70%;
-    margin-left: 32%;
+    margin-left: 35%;
     z-index:3;
     text-align: left;
     animation: text 3s 1;
@@ -284,25 +284,25 @@ body{
 }
 
 .icon{
-    font-size: 45px;
+    font-size: 10px;
+    size: 10px;
     text-align: center;
     position: fixed;
     top: 55%; 
     left: 30%; 
     transform: translate(-50%,-50%);
     /* border: red 2px solid  ; */
-    animation: text 3s 1;
-    font-family: 'Arial Narrow Bold', sans-serif;
     background: none;
-    width: 30%;
+    width: 20%;
     
 }
+
 #desc{
     font-size: 15px;
     text-align: center;
     position: fixed;
     top: 75%; 
-    left: 60%; 
+    left: 58%; 
     transform: translate(-50%,-50%);
     /* border: red 2px solid  ; */
     animation: text 3s 1;
